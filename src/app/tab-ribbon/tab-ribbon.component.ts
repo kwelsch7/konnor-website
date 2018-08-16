@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tab-ribbon',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab-ribbon.component.css']
 })
 export class TabRibbonComponent implements OnInit {
-
+  @Input() tabText: string;
   constructor() { }
 
   ngOnInit() {

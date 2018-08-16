@@ -1,0 +1,8 @@
+.content {
+  background-color: var(--content-background);
+}
+
+img {
+  height: 7.5rem;
+  width: 7.5rem;
+}

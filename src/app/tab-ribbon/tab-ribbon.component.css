@@ -1,0 +1,17 @@
+.tab-ribbon {
+  padding: 2.5rem 1.5rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
+}
+
+.tab-ribbon:not(.tab-active):hover {
+  background-color: var(--accent-color-dark);
+}
+
+.tab-active {
+  padding-bottom: 4.5rem;
+  background-color: var(--accent-color-light);
+  color: var(--text-color);
+}
