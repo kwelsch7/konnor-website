@@ -1,8 +1,53 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-variant: small-caps;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-left: 8rem;
+}
+
 .content {
+  position: relative;
   background-color: var(--content-background);
+  flex-grow: 1;
+}
+
+header, .content {
+  padding: 0 1.5rem;
+}
+
+nav {
+  margin-top: -3.75rem;
+  margin-bottom: 2rem;
 }
 
 img {
   height: 7.5rem;
   width: 7.5rem;
+}
+
+.bread-crumb {
+  position: absolute;
+  top: 5.5rem;
+  margin-left: 2.5rem;
+}
+
+.inner-content {
+  position: absolute;
+  top: 8.875rem;
+  right: 2.5rem;
+  left: 2.5rem;
+  padding: 1.5rem;
 }

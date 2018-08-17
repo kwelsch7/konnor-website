@@ -1,17 +1,39 @@
 .tab-ribbon {
-  padding: 2.5rem 1.5rem;
+  position: relative;
+  padding: 1.25rem 1rem 1rem 1rem;
+  width: 9.25rem;
   background-color: var(--accent-color);
   color: #fff;
-  transition: all 0.25s ease-in-out;
+  font-variant: small-caps;
+  font-size: 1.25rem;
   text-decoration: none;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  transition: all 0.25s ease-in-out;
 }
 
-.tab-ribbon:not(.tab-active):hover {
+.tab-ribbon::after {
+  content: '';
+  position: absolute;
+  bottom: -2.875rem;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--accent-color);
+  clip-path: polygon(0% 0%, 0% 100%, 50% 50%, 100% 100%, 100% 0%);
+  transition: all 0.25s ease-in-out;
+}
+
+.tab-ribbon:not(.tab-active):hover,
+.tab-ribbon:not(.tab-active):hover::after {
   background-color: var(--accent-color-dark);
 }
 
 .tab-active {
   padding-bottom: 4.5rem;
-  background-color: var(--accent-color-light);
   color: var(--text-color);
+}
+
+.tab-active,
+.tab-active::after {
+  background-color: var(--accent-color-light);
 }

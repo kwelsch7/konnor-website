@@ -1,25 +1,20 @@
 <div class="container">
-  <h1>Konnor's Website</h1>
-  <h2>Hosted with ❤️ by GitHub</h2>
-  <div>Maybe a search bar</div>
-
+  <header>
+    <h1>Konnor's Website</h1>
+    <h2>Hosted with ❤️ by GitHub</h2>
+  </header>
   <div class="content">
     <nav>
       <div class="d-flex justify-content-between">
         <img src="assets/cardboard_homestar.png" class="rounded-circle" />
         <app-tab-list></app-tab-list>
       </div>
-      <div>bread >> crumb >> cool</div>
+      <div class="bread-crumb">bread >> crumb >> cool</div>
     </nav>
 
-    <h3>Title for section</h3>
-    <p>Description of section</p>
-
-    <div>Filtering and stuff</div>
-    <ul>
-      <li>The</li>
-      <li>gallery</li>
-    </ul>
+    <div class="inner-content">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 
   <footer>
