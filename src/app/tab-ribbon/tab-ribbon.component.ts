@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-tab-ribbon',
@@ -7,9 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TabRibbonComponent implements OnInit {
   @Input() tabText: string;
+  @Output() activeTab = new EventEmitter<string>();
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  switchTabs() {
+    this.activeTab.emit(this.tabText);
   }
 
 }

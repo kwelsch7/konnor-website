@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-tab-list',
@@ -12,7 +12,12 @@ export class TabListComponent implements OnInit {
     'Drawings',
     'Games'
   ];
+  @Output() activeTab = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() { }
+
+  updateActiveTab(active: string) {
+    this.activeTab.emit(active);
+  }
 }

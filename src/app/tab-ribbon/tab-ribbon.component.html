@@ -1,5 +1,6 @@
 <a
   class="tab-ribbon d-flex align-items-center justify-content-center"
+  (click)="switchTabs()"
   [routerLink]="['/' + tabText.toLowerCase()]"
   routerLinkActive="tab-active"
   [routerLinkActiveOptions]='{ exact: true }'

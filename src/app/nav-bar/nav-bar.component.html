@@ -1,0 +1,7 @@
+<nav>
+  <div class="d-flex justify-content-between">
+    <img [src]="profileImgSrc" class="rounded-circle" />
+    <app-tab-list (activeTab)="onTabChange($event)"></app-tab-list>
+  </div>
+  <div class="bread-crumb">bread >> crumb >> cool</div>
+</nav>

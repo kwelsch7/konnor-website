@@ -11,6 +11,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { AnimationsPageComponent } from './animations-page/animations-page.component';
 import { DrawingsPageComponent } from './drawings-page/drawings-page.component';
 import { GamesPageComponent } from './games-page/games-page.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
@@ -30,7 +31,8 @@ const routes: Routes = [
     AboutPageComponent,
     AnimationsPageComponent,
     DrawingsPageComponent,
-    GamesPageComponent
+    GamesPageComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

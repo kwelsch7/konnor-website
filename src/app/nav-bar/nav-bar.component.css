@@ -1,0 +1,15 @@
+nav {
+  margin-top: -3.75rem;
+  margin-bottom: 2rem;
+}
+
+img {
+  height: 7.5rem;
+  width: 7.5rem;
+}
+
+.bread-crumb {
+  position: absolute;
+  top: 5.5rem;
+  margin-left: 2.5rem;
+}
