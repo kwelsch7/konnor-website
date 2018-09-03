@@ -4,7 +4,7 @@ import { GalleryItem } from '../models';
 @Component({
   selector: 'app-drawings-page',
   templateUrl: './drawings-page.component.html',
-  styleUrls: ['./drawings-page.component.css']
+  styleUrls: ['./drawings-page.component.scss']
 })
 export class DrawingsPageComponent implements OnInit {
   galleryItems: GalleryItem[] = [

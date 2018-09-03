@@ -3,7 +3,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 @Component({
   selector: 'app-tab-ribbon',
   templateUrl: './tab-ribbon.component.html',
-  styleUrls: ['./tab-ribbon.component.css']
+  styleUrls: ['./tab-ribbon.component.scss']
 })
 export class TabRibbonComponent implements OnInit {
   @Input() tabText: string;

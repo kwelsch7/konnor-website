@@ -3,7 +3,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 @Component({
   selector: 'app-tab-list',
   templateUrl: './tab-list.component.html',
-  styleUrls: ['./tab-list.component.css']
+  styleUrls: ['./tab-list.component.scss']
 })
 export class TabListComponent implements OnInit {
   tabs: string[] = [

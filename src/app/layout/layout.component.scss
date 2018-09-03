@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -20,7 +22,7 @@ h2 {
 
 .content {
   position: relative;
-  background-color: var(--content-background);
+  background-color: $content-background;
   flex-grow: 1;
 }
 

@@ -1,8 +1,10 @@
+@import '../../styles.scss';
+
 .tab-ribbon {
   position: relative;
   padding: 1.25rem 1rem 1rem 1rem;
   width: 9.25rem;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   color: #fff;
   font-variant: small-caps;
   font-size: 1.25rem;
@@ -18,22 +20,22 @@
   bottom: -2.875rem;
   width: 100%;
   height: 3rem;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   clip-path: polygon(0% 0%, 0% 100%, 50% 50%, 100% 100%, 100% 0%);
   transition: all 0.25s ease-in-out;
 }
 
 .tab-ribbon:not(.tab-active):hover,
 .tab-ribbon:not(.tab-active):hover::after {
-  background-color: var(--accent-color-dark);
+  background-color: $accent-color-dark;
 }
 
 .tab-active {
   padding-bottom: 4.5rem;
-  color: var(--text-color);
+  color: $text-color;
 }
 
 .tab-active,
 .tab-active::after {
-  background-color: var(--accent-color-light);
+  background-color: $accent-color-light;
 }
