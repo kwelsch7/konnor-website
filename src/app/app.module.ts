@@ -12,6 +12,9 @@ import { AnimationsPageComponent } from './animations-page/animations-page.compo
 import { DrawingsPageComponent } from './drawings-page/drawings-page.component';
 import { GamesPageComponent } from './games-page/games-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { GalleryFiltersComponent } from './gallery-filters/gallery-filters.component';
+import { GalleryItemComponent } from './gallery-item/gallery-item.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
@@ -32,7 +35,10 @@ const routes: Routes = [
     AnimationsPageComponent,
     DrawingsPageComponent,
     GamesPageComponent,
-    NavBarComponent
+    NavBarComponent,
+    GalleryComponent,
+    GalleryFiltersComponent,
+    GalleryItemComponent
   ],
   imports: [
     BrowserModule,

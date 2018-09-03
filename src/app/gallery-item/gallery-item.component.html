@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-4">
+    <img [src]="galleryItem.imageLink">
+  </div>
+  <div class="col-8">
+    <ul class="list-inline float-right">
+      <li class="list-inline-item badge badge-secondary ml-3" *ngFor="let tag of galleryItem.tags">
+        <i class="fas fa-tags mr-2"></i> {{tag}}
+      </li>
+    </ul>
+    <h4>{{galleryItem.title}}</h4>
+    <h5 class="text-muted">{{galleryItem.date}} - {{galleryItem.medium}}</h5>
+    <p>{{galleryItem.description}}</p>
+  </div>
+</div>

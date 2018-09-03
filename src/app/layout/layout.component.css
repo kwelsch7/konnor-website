@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -29,9 +29,5 @@ header, .content {
 }
 
 .inner-content {
-  position: absolute;
-  top: 8.875rem;
-  right: 2.5rem;
-  left: 2.5rem;
-  padding: 1.5rem;
+  padding: 2.25rem;
 }
