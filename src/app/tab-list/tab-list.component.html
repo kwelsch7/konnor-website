@@ -1,5 +1,5 @@
-<ul class="list-inline float-right">
-  <li *ngFor="let tab of tabs" class="list-inline-item">
+<ul>
+  <li *ngFor="let tab of tabs">
     <app-tab-ribbon [tabText]="tab" (activeTab)="updateActiveTab($event)"></app-tab-ribbon>
   </li>
 </ul>

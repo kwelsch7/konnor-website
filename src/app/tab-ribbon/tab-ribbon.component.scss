@@ -2,6 +2,7 @@
 
 .tab-ribbon {
   position: relative;
+  justify-content: center;
   padding: 1.25rem 1rem 1rem 1rem;
   width: 9.25rem;
   background-color: $accent-color;
@@ -12,17 +13,17 @@
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   transition: all 0.25s ease-in-out;
-}
 
-.tab-ribbon::after {
-  content: '';
-  position: absolute;
-  bottom: -2.875rem;
-  width: 100%;
-  height: 3rem;
-  background-color: $accent-color;
-  clip-path: polygon(0% 0%, 0% 100%, 50% 50%, 100% 100%, 100% 0%);
-  transition: all 0.25s ease-in-out;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2.875rem;
+    width: 100%;
+    height: 3rem;
+    background-color: $accent-color;
+    clip-path: polygon(0% 0%, 0% 100%, 50% 50%, 100% 100%, 100% 0%);
+    transition: all 0.25s ease-in-out;
+  }
 }
 
 .tab-ribbon:not(.tab-active):hover,
@@ -38,4 +39,32 @@
 .tab-active,
 .tab-active::after {
   background-color: $accent-color-light;
+}
+
+@media (max-width: 768px) {
+  .tab-ribbon {
+    width: 75%;
+    border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0;
+    padding-top: 1rem;
+    justify-content: initial;
+    padding-left: 2rem;
+
+    &::after {
+      right: -2.875rem;
+      bottom: 0;
+      height: 100%;
+      width: 3rem;
+      clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 50% 50%, 100% 0%);
+    }
+  }
+
+  .tab-active {
+    width: 90%;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+
 }

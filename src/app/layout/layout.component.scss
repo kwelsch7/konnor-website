@@ -7,7 +7,8 @@
 }
 
 header {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
 }
 
 h1 {
@@ -17,19 +18,32 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  margin-left: 8rem;
 }
 
 .content {
   position: relative;
   background-color: $content-background;
   flex-grow: 1;
-}
-
-header, .content {
   padding: 0 1.5rem;
 }
 
 .inner-content {
-  padding: 2.25rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+    text-align: initial;
+  }
+
+  h2 {
+    margin-left: 8rem;
+  }
+  
+  .inner-content {
+    margin-top: 9rem;
+    padding: 2.25rem;
+  }
 }
