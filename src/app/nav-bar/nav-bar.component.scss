@@ -9,10 +9,6 @@ img {
   margin-bottom: 1rem;
 }
 
-.bread-crumb {
-  margin-left: 2.5rem;
-}
-
 @media (min-width: 768px) {
   nav {
     text-align: initial;
@@ -20,10 +16,5 @@ img {
 
   img {
     float: left;
-  }
-
-  .bread-crumb {
-    float:left;
-    margin-top: 8rem;
   }
 }
