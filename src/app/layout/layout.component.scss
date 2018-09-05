@@ -28,7 +28,7 @@ h2 {
 }
 
 .inner-content {
-  padding: 1.5rem;
+  padding: 1.5rem 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -44,6 +44,12 @@ h2 {
   
   .inner-content {
     margin-top: 9rem;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .inner-content {
     padding: 2.25rem;
   }
 }

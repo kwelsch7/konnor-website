@@ -2,10 +2,10 @@ $background-color: #005792;
 $text-color: #13334c;
 $content-background: #f6f6e9;
 $accent-color: #fd5f00;
-$accent-color-light: #FF8526;
-$accent-color-dark: #D73900;
+$accent-color-light: lighten($accent-color, 16%);
+$accent-color-dark: darken($accent-color, 8%);
 $accent-2: #F1B3C8;
-$accent-2-dark: #E87B9F;
+$accent-2-dark: darken($accent-2, 12%);
 
 body {
   margin: 0;

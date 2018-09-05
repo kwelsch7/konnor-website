@@ -15,6 +15,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GalleryFiltersComponent } from './gallery-filters/gallery-filters.component';
 import { GalleryItemComponent } from './gallery-item/gallery-item.component';
+import { FooterComponent } from './footer/footer.component';
+import { SocialMediaListComponent } from './social-media-list/social-media-list.component';
+import { IconLinkComponent } from './icon-link/icon-link.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
@@ -38,7 +41,10 @@ const routes: Routes = [
     NavBarComponent,
     GalleryComponent,
     GalleryFiltersComponent,
-    GalleryItemComponent
+    GalleryItemComponent,
+    FooterComponent,
+    SocialMediaListComponent,
+    IconLinkComponent
   ],
   imports: [
     BrowserModule,

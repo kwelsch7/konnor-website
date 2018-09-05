@@ -1,0 +1,11 @@
+@import '../../styles.scss';
+
+footer {
+    padding: 0.75rem 0.5rem;
+    color: $accent-2;
+}
+
+.top-link:hover {
+    color: $accent-2-dark;
+    cursor: pointer;
+}
