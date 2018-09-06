@@ -18,6 +18,7 @@ import { GalleryItemComponent } from './gallery-item/gallery-item.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialMediaListComponent } from './social-media-list/social-media-list.component';
 import { IconLinkComponent } from './icon-link/icon-link.component';
+import { SelectMultipleComponent } from './select-multiple/select-multiple.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
@@ -44,7 +45,8 @@ const routes: Routes = [
     GalleryItemComponent,
     FooterComponent,
     SocialMediaListComponent,
-    IconLinkComponent
+    IconLinkComponent,
+    SelectMultipleComponent
   ],
   imports: [
     BrowserModule,

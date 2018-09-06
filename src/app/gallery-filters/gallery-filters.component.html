@@ -1,3 +1,10 @@
-<p>
-  gallery-filters works!
-</p>
+<p><em>Showing: {{filteredAmount}} of {{totalAmount}} pictures</em></p>
+<span class="h5 mr-4"><i class="fas fa-sliders-h mr-2"></i> Filters: </span>
+<app-select-multiple [label]="'Medium'" [options]="mediumOptions"></app-select-multiple>
+<select class="form-control select mx-3">
+  <option disabled>Sorted by: {{selectedSort}}</option>
+  <option *ngFor="let sortOption of sortOptions">
+    {{sortOption}}
+  </option>
+</select>
+<app-select-multiple [label]="'Tags'" [options]="tagOptions"></app-select-multiple>
