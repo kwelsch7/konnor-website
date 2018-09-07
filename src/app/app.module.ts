@@ -19,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SocialMediaListComponent } from './social-media-list/social-media-list.component';
 import { IconLinkComponent } from './icon-link/icon-link.component';
 import { SelectMultipleComponent } from './select-multiple/select-multiple.component';
+import { ClickOutsideDirective } from './click-outside.directive';
 
 const routes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
@@ -46,7 +47,8 @@ const routes: Routes = [
     FooterComponent,
     SocialMediaListComponent,
     IconLinkComponent,
-    SelectMultipleComponent
+    SelectMultipleComponent,
+    ClickOutsideDirective
   ],
   imports: [
     BrowserModule,

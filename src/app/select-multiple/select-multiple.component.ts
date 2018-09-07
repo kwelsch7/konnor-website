@@ -10,9 +10,7 @@ export class SelectMultipleComponent implements OnInit {
   @Input() options: string[];
   isOpen = false;
   selectedOptions: string[] = [];
-  constructor() {
-    // https://www.bizstream.com/blog/november-2017/angular-click-elsewhere-directive
-  }
+  constructor() { }
 
   ngOnInit() { }
 
@@ -30,5 +28,9 @@ export class SelectMultipleComponent implements OnInit {
 
   onClearClick() {
     this.selectedOptions = [];
+  }
+
+  onClickOutside() {
+    this.isOpen = false;
   }
 }

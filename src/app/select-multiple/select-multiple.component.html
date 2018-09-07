@@ -1,4 +1,4 @@
-<div class="form-group position-relative d-inline-block">
+<div (appClickOutside)="onClickOutside()" class="form-group position-relative d-inline-block">
   <button (click)="onDropdownClick()" [ngClass]="{ 'dropdown-button': true, 'form-control': true, 'retain-focus': isOpen }">
     <span>{{label}} ({{selectedOptions.length}})</span>
     <i [ngClass]="{ fas: true, 'fa-caret-down': !isOpen, 'fa-caret-up': isOpen }"></i>
