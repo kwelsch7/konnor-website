@@ -14,7 +14,7 @@ export class DrawingsPageComponent implements OnInit {
                     I'm pretty proud of what I've been able to accomplish while drawing with a mouse before people wander back.`,
       imageLink: 'assets/drawings/jurassic_world.jpg',
       medium: 'MS Paint',
-      tags: ['doodle', 'paint', 'Illustrator'],
+      tags: ['doodle', 'paint'],
       title: 'Jurassic World',
     },
     {
@@ -25,7 +25,7 @@ export class DrawingsPageComponent implements OnInit {
                     So that was a fun change of pace.`,
       imageLink: 'assets/drawings/svg_portrait.jpg',
       medium: 'Adobe Illustrator',
-      tags: ['svg'],
+      tags: ['svg', 'Illustrator'],
       title: 'SVG Self Portrait',
     },
     {
@@ -208,10 +208,24 @@ export class DrawingsPageComponent implements OnInit {
       tags: ['doodle', 'paint'],
       title: 'Turkey Sandwich',
     },
-  ];
+  ].sort((item1, item2) => {
+    if (item1.title > item2.title) {
+      return 1;
+    }
+    if (item1.title < item2.title) {
+      return -1;
+    }
+    return 0;
+  });
+
+  filteredItems: GalleryItem[] = this.galleryItems;
 
   constructor() { }
 
   ngOnInit() { }
+
+  onFilterApplied(filteredItems: GalleryItem[]) {
+    this.filteredItems = filteredItems;
+  }
 
 }

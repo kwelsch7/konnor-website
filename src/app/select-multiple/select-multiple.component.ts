@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-select-multiple',
@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SelectMultipleComponent implements OnInit {
   @Input() label: string;
   @Input() options: string[];
+  @Output() outputSelectedOptions = new EventEmitter<string[]>();
   isOpen = false;
   selectedOptions: string[] = [];
   constructor() { }
@@ -24,10 +25,12 @@ export class SelectMultipleComponent implements OnInit {
     } else {
       this.selectedOptions.push(option);
     }
+    this.outputSelectedOptions.emit(this.selectedOptions);
   }
 
   onClearClick() {
     this.selectedOptions = [];
+    this.outputSelectedOptions.emit(this.selectedOptions);
   }
 
   onClickOutside() {
