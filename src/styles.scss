@@ -5,10 +5,12 @@ $accent-color: #fd5f00;
 $accent-color-light: lighten($accent-color, 16%);
 $accent-color-dark: darken($accent-color, 8%);
 $accent-2: #F1B3C8;
-$accent-2-dark: darken($accent-2, 12%);
+$accent-2-dark: darken($accent-2, 15%);
+$bootstrap-fonts: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 
 body {
   margin: 0;
+  font-family: Nunito, $bootstrap-fonts;
 }
 
 h1 {
@@ -17,6 +19,11 @@ h1 {
 
 h2 {
   color: $accent-2-dark;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 600;
 }
 
 p {

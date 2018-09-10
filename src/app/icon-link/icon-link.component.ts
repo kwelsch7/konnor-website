@@ -8,6 +8,7 @@ import { IconLink } from '../models';
 })
 export class IconLinkComponent implements OnInit {
   @Input() linkProps: IconLink;
+  @Input() accentFont?: boolean;
   constructor() { }
 
   ngOnInit() { }

@@ -1,10 +1,12 @@
 <p><em>Showing: {{filteredItems.length}} of {{originalItems.length}} pictures</em></p>
-<span class="h5 mr-4"><i class="fas fa-sliders-h mr-2"></i> Filters: </span>
-<app-select-multiple (outputSelectedOptions)="onMediumOptionsUpdate($event)" [label]="'Medium'" [options]="mediumOptions"></app-select-multiple>
-<select (change)="onSortByUpdate($event)" class="form-control select mx-3">
-  <option disabled>Sorted by: {{selectedSort}}</option>
-  <option *ngFor="let sortOption of sortOptions">
-    {{sortOption}}
-  </option>
-</select>
-<app-select-multiple (outputSelectedOptions)="onTagOptionsUpdate($event)" [label]="'Tags'" [options]="tagOptions"></app-select-multiple>
+<div class="d-flex">
+  <span class="h5 mr-4"><i class="fas fa-sliders-h mr-2"></i> Filters: </span>
+  <app-select-multiple (outputSelectedOptions)="onMediumOptionsUpdate($event)" [label]="'Medium'" [options]="mediumOptions"></app-select-multiple>
+  <select (change)="onSortByUpdate($event)" class="form-control select mx-3">
+    <option disabled>Sorted by: {{selectedSort}}</option>
+    <option *ngFor="let sortOption of sortOptions">
+      {{sortOption}}
+    </option>
+  </select>
+  <app-select-multiple (outputSelectedOptions)="onTagOptionsUpdate($event)" [label]="'Tags'" [options]="tagOptions"></app-select-multiple>
+</div>

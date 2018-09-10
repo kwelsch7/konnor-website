@@ -1,0 +1,10 @@
+@import '../../styles.scss';
+
+.accent-color {
+    color: $accent-2;
+
+    &:hover,
+    &:focus {
+        color: $accent-2-dark;
+    }
+}

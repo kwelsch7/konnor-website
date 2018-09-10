@@ -2,3 +2,24 @@
     display: inline-block;
     width: fit-content;
 }
+
+.d-flex {
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+
+        & > * {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    app-select-multiple,
+    .select {
+        width: 100%;
+    }
+}

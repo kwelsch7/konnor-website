@@ -8,6 +8,7 @@ import { IconLink } from '../models';
 })
 export class SocialMediaListComponent implements OnInit {
   @Input() inline?: boolean;
+  @Input() accentFont?: boolean;
   socialMediaLinks: IconLink[] = [
     {
       faIcon: 'fab fa-linkedin',

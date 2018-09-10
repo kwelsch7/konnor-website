@@ -1,11 +1,16 @@
 .form-group {
     width: 12rem;
+    margin-bottom: 0;
 }
 
 .dropdown-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    & span {
+        margin-left: 0.25rem;
+    }
 }
 
 .retain-focus {
@@ -42,5 +47,11 @@
     .fa-check-square {
         color: #28a745; // success
         background: radial-gradient(#fff 55%, transparent 45%);
+    }
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        width: 100%;
     }
 }

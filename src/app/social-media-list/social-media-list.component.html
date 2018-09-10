@@ -1,5 +1,5 @@
 <ul [ngClass]="{ 'fa-ul': true, 'list-inline': inline }">
   <li *ngFor="let link of socialMediaLinks" [ngClass]="{ 'list-inline-item': inline }" >
-    <app-icon-link [linkProps]="link"></app-icon-link>
+    <app-icon-link [linkProps]="link" [accentFont]="accentFont"></app-icon-link>
   </li>
 </ul>

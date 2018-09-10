@@ -5,7 +5,7 @@
   </button>
   <div *ngIf="isOpen" class="dropdown-body">
     <div class="option" *ngFor="let option of options" (click)="onOptionClick(option)">
-      <i [ngClass]="{ fas: true, 'fa-square': !selectedOptions.includes(option), 'fa-check-square': selectedOptions.includes(option) }"></i>
+      <i [ngClass]="{ 'mr-2': true, fas: true, 'fa-square': !selectedOptions.includes(option), 'fa-check-square': selectedOptions.includes(option) }"></i>
       {{option}}
     </div>
     <button (click)="onClearClick()" [disabled]="selectedOptions.length === 0" class="btn btn-secondary float-right mt-2">Clear</button>
