@@ -1,10 +1,14 @@
-img {
+.item-img {
     object-fit: contain;
     width: 100%;
     height: 11.25rem;
     // background-color: rgba(0, 0, 0, 0.1);
-    background-image: radial-gradient(rgba(0, 0, 0, 0.5), transparent);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.25), transparent 90%);
     margin-bottom: 1rem;
+}
+
+.modal-img {
+    width: 100%;
 }
 
 .list-inline {
@@ -20,7 +24,7 @@ img {
 }
 
 @media (min-width: 768px) {
-    img {
+    .item-img {
         margin-bottom: 0;
     }
 

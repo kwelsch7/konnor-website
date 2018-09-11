@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { GalleryItem } from '../models';
 
 @Component({
@@ -8,8 +9,13 @@ import { GalleryItem } from '../models';
 })
 export class GalleryItemComponent implements OnInit {
   @Input() galleryItem: GalleryItem;
-  constructor() { }
+  modalRef: NgbModalRef;
+
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() { }
 
+  onImageClick(content) {
+    this.modalRef = this.modalService.open(content, { centered: true });
+  }
 }

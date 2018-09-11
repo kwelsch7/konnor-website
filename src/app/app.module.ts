@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { TabRibbonComponent } from './tab-ribbon/tab-ribbon.component';
@@ -20,6 +22,7 @@ import { SocialMediaListComponent } from './social-media-list/social-media-list.
 import { IconLinkComponent } from './icon-link/icon-link.component';
 import { SelectMultipleComponent } from './select-multiple/select-multiple.component';
 import { ClickOutsideDirective } from './click-outside.directive';
+import { ModalComponent } from './modal/modal.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
@@ -48,10 +51,12 @@ const routes: Routes = [
     SocialMediaListComponent,
     IconLinkComponent,
     SelectMultipleComponent,
-    ClickOutsideDirective
+    ClickOutsideDirective,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
+    NgbModalModule.forRoot(),
     RouterModule.forRoot(routes)
   ],
   providers: [],
