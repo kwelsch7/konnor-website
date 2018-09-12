@@ -5,10 +5,66 @@
   <title>Konnor's Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="./noscript.css">
 </head>
 <body>
-  <h1>Welcome</h1>
-  <h2>To the Noscript version of my site. I hope you're happy. :[</h2>
-  <h3>Feel free to turn JavaScript back on so you can play games and see animations on the <code>&lt;canvas&gt;</code> element. 😉</h3>
+  <div class="site-background">
+    <div class="container">
+      <header>
+        <h1 id="top">Konnor's Website</h1>
+        <h2>Hosted with ❤️ by GitHub</h2>
+      </header>
+      <div class="content">
+        <nav>
+          <img src="assets/konnor_profile_4.jpg" class="rounded-circle" />
+          <!-- <app-tab-list (activeTab)="onTabChange($event)"></app-tab-list> -->
+        </nav>
+        <div class="inner-content">
+          <h3 class="h1">Welcome</h3>
+          <p>
+            To the Noscript version of my site. I hope you're happy. :[
+            Feel free to turn JavaScript back on so you can play games and see animations on the <code>&lt;canvas&gt;</code> element. 😉
+            Maybe some day when I'm feeling generous I'll try to at least provide noscript versions of the About, Drawings, and maybe even Animations page.
+            Until then, . . . here you go.
+          </p>
+        </div>
+      </div>
+      <footer class="d-flex justify-content-between">
+        <div>
+          <a href="#top" class="top-link">^ To top</a><br>
+          <span>© 2018 Konnor Welsch</span>
+        </div>
+        <ul class="fa-ul list-inline">
+          <li class="list-inline-item" >
+              <a href="https://www.linkedin.com/in/konnor-welsch-812448114" target="_blank" rel="noopener noreferrer" class="accent-color">
+                <span class="fa-li">
+                  <i class="fab fa-linkedin"></i>
+                </span>
+                LinkedIn
+              </a>
+          </li>
+          <li class="list-inline-item" >
+              <a href="https://github.com/kwelsch7" target="_blank" rel="noopener noreferrer" class="accent-color">
+                <span class="fa-li">
+                  <i class="fab fa-github"></i>
+                </span>
+                GitHub
+              </a>
+          </li>
+          <li class="list-inline-item" >
+              <a href="https://codepen.io/kwelsch" target="_blank" rel="noopener noreferrer" class="accent-color">
+                <span class="fa-li">
+                  <i class="fab fa-codepen"></i>
+                </span>
+                CodePen
+              </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
