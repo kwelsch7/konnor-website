@@ -1,3 +1,13 @@
+img {
+    width: 100%;
+}
+
 .fa-linkedin {
     color: #007bb5;
 }
+
+@media (min-width: 992px) {
+    figure {
+        // float: right;
+    }
+  }

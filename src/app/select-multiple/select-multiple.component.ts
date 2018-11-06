@@ -28,6 +28,12 @@ export class SelectMultipleComponent implements OnInit {
     this.outputSelectedOptions.emit(this.selectedOptions);
   }
 
+  onOptionKeyPress(event: KeyboardEvent, option: string) {
+    if (event.key === 'Enter') {
+      this.onOptionClick(option);
+    }
+  }
+
   onClearClick() {
     this.selectedOptions = [];
     this.outputSelectedOptions.emit(this.selectedOptions);

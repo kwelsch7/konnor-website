@@ -4,7 +4,7 @@
     <i [ngClass]="{ fas: true, 'fa-caret-down': !isOpen, 'fa-caret-up': isOpen }"></i>
   </button>
   <div *ngIf="isOpen" class="dropdown-body">
-    <div class="option" *ngFor="let option of options" (click)="onOptionClick(option)">
+    <div class="option" *ngFor="let option of options" (click)="onOptionClick(option)" (keypress)="onOptionKeyPress($event, option)" tabindex="0">
       <i [ngClass]="{ 'mr-1': true, fas: true, 'fa-square': !selectedOptions.includes(option), 'fa-check-square': selectedOptions.includes(option) }"></i>
       {{option}}
     </div>
