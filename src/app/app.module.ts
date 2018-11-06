@@ -23,6 +23,8 @@ import { IconLinkComponent } from './icon-link/icon-link.component';
 import { SelectMultipleComponent } from './select-multiple/select-multiple.component';
 import { ClickOutsideDirective } from './click-outside.directive';
 import { ModalComponent } from './modal/modal.component';
+import { PongAnimationComponent } from './pong-animation/pong-animation.component';
+import { AnimationGalleryComponent } from './animation-gallery/animation-gallery.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
@@ -52,7 +54,9 @@ const routes: Routes = [
     IconLinkComponent,
     SelectMultipleComponent,
     ClickOutsideDirective,
-    ModalComponent
+    ModalComponent,
+    PongAnimationComponent,
+    AnimationGalleryComponent
   ],
   imports: [
     BrowserModule,

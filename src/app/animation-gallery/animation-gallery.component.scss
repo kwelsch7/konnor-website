@@ -1,0 +1,9 @@
+.list-group-item {
+    background-color: inherit;
+}
+
+@media (max-width: 768px) {
+    .list-group-item {
+        padding: 0.75rem 0;
+    }
+}
