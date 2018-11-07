@@ -1,0 +1,10 @@
+<div id="border">
+  <h1>CSS-a-Sketch</h1>
+  <div id="canvas">
+    <div *ngFor="let y of dimensionYArray" class="grid-row">
+      <div *ngFor="let x of dimensionXArray" class="grid-square" (mouseenter)="colorSquare($event)"></div>
+    </div>
+  </div>
+  <div id="left-button"></div>
+  <div id="right-button"></div>
+</div>

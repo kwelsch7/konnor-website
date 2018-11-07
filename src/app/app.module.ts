@@ -25,6 +25,7 @@ import { ClickOutsideDirective } from './click-outside.directive';
 import { ModalComponent } from './modal/modal.component';
 import { PongAnimationComponent } from './pong-animation/pong-animation.component';
 import { AnimationGalleryComponent } from './animation-gallery/animation-gallery.component';
+import { SketchpadGameComponent } from './sketchpad-game/sketchpad-game.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
@@ -56,7 +57,8 @@ const routes: Routes = [
     ClickOutsideDirective,
     ModalComponent,
     PongAnimationComponent,
-    AnimationGalleryComponent
+    AnimationGalleryComponent,
+    SketchpadGameComponent
   ],
   imports: [
     BrowserModule,
