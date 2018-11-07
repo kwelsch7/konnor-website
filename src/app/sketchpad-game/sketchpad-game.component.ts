@@ -14,6 +14,13 @@ export class SketchpadGameComponent implements OnInit {
   ngOnInit() {}
 
   colorSquare(event: { target: HTMLDivElement }) {
-    event.target.className += ' colored';
+    if (!event.target.className.includes('colored')) {
+      event.target.className += ' colored';
+    }
+  }
+
+  resetSquares() {
+    const coloredSquares = document.querySelectorAll('.grid-square.colored');
+    Array.from(coloredSquares).forEach(square => square.className = 'grid-square');
   }
 }

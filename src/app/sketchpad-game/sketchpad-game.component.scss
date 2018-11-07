@@ -53,6 +53,18 @@ h1 {
     border-style: solid;
     border-color: #fff #ccc #ccc #fff;
     box-shadow: 4px 4px 10px #b00000;
+    transition: background-color 0.3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: darken(#eaeaea, 12%);
+
+        &::after {
+            content: 'Reset';
+        }
+    }
 }
 
 #left-button {
@@ -61,10 +73,6 @@ h1 {
 
 #right-button {
     left: 710px;
-}
-
-#left-button:hover {
-    background-color: #ddd;
 }
 
 .grid-row {
